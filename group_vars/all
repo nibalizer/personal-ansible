@@ -1,0 +1,11 @@
+---
+test: 'foo'
+shell:
+  packages:
+    - epel-release
+    - git
+    # go was installed via downloading/unpacking tarball
+    - rsync
+    - jq
+    - nmap
+    - vim
