@@ -12,9 +12,23 @@
 #      description: EPEL YUM repo
 #      baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
 
+  # Also need the extras redhat repo enabled
+  # subscription-manager repos --enable=rhel-7-server-extras-rpms
+  - name: docker-ce-stable-repo
+    yum_repository:
+      name: docker-ce-stable
+      description: Docker CE Stable - $basearch
+      baseurl: https://download.docker.com/linux/centos/7/$basearch/stable
+      gpgkey: https://download.docker.com/linux/centos/gpg
+
   - name: install the packages for the shellbox
     yum:
       name: "{{ item }}"
       state: latest
     loop: "{{ shell.packages }}"
 
+  - name: Enable docker service
+    service:
+      name: docker-ce
+      enabled: yes
+      state: started
