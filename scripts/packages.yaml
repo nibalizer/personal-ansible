@@ -1,0 +1,64 @@
+packages:
+  - git
+  - rsync
+  - virtualenv
+  - openconnect
+  - python-requests
+  - apt-transport-https
+  - libreoffice
+  - evince
+  - aptitude
+  - curl
+  - apt-transport-https
+  # requires key/repo from apt.kubernetes.io
+  # https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-using-native-package-management
+  - kubectl
+  - yakuake
+  - x11vnc
+  - xtightvncviewer
+  - jq
+  # requires key/repo from docker.com
+  # https://docs.docker.com/install/linux/docker-ce/debian/#set-up-the-repository
+  - docker-ce
+  # Needed for zoom
+  - libxcb-xtest0
+  - feh
+  - python-yaml
+  - xz-utils
+  - npm
+  # needs yarn's deb package
+  # https://yarnpkg.com/lang/en/docs/install/#debian-stable
+  - yarn
+  - golang-go
+  - tightvncserver
+  - scrot
+  - nmap
+  - xclip
+  - ffmpeg
+  - tmux
+  - qemu-kvm
+  - libvirt-clients 
+  - qemu-utils 
+  - libvirt-daemon-system
+  - virt-manager
+  - transmission-cli
+  - pipenv
+  - bridge-utils
+  - dnsutils
+  - htop
+  - obs-studio
+  - mplayer
+  - xtrlock
+  - qrencode
+  # Requires lurtis/open build service configuration
+  # https://lutris.net/downloads/ 
+  - lutris
+  # requires dpkg --add-architecture i386
+  - libgnutls30:i386
+  - libldap-2.4.2:i386
+  - libgpg-error0:i386
+  - libsqlite3-0:i386
+  # Wine Staging, requires repo
+  # https://wiki.winehq.org/Debian
+  - winehq-staging
+  - cheese
