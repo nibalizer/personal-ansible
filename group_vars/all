@@ -9,3 +9,8 @@ shell:
     - jq
     - nmap
     - vim
+    - vim-go
+    - yum-utils
+    - device-mapper-persistent-data
+    - lvm2
+    - docker-ce
