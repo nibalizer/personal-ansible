@@ -12,14 +12,14 @@ packages:
   - apt-transport-https
   # requires key/repo from apt.kubernetes.io
   # https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-using-native-package-management
-  - kubectl
+  #  - kubectl
   - yakuake
   - x11vnc
   - xtightvncviewer
   - jq
   # requires key/repo from docker.com
   # https://docs.docker.com/install/linux/docker-ce/debian/#set-up-the-repository
-  - docker-ce
+  #- docker-ce
   # Needed for zoom
   - libxcb-xtest0
   - feh
@@ -28,7 +28,7 @@ packages:
   - npm
   # needs yarn's deb package
   # https://yarnpkg.com/lang/en/docs/install/#debian-stable
-  - yarn
+  #- yarn
   - golang-go
   - tightvncserver
   - scrot
@@ -42,7 +42,7 @@ packages:
   - libvirt-daemon-system
   - virt-manager
   - transmission-cli
-  - pipenv
+    #  - pipenv
   - bridge-utils
   - dnsutils
   - htop
@@ -58,7 +58,22 @@ packages:
   - libldap-2.4.2:i386
   - libgpg-error0:i386
   - libsqlite3-0:i386
+  - libnvidia-gl-430
+  - libnvidia-gl-430:i386
+  - libvulkan1
+  - libvulkan1:i386
+  # end i386/lutris
   # Wine Staging, requires repo
   # https://wiki.winehq.org/Debian
-  - winehq-staging
+  - winehq-stable
   - cheese
+  - tasksel
+  - hwinfo
+  - yadm
+  # needed for discord
+  - libappindicator1
+  - libc++1
+  - lm-sensors
+  - openshot
+  - opus-tools
+  - kdenlive
